@@ -24,17 +24,35 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        .full-width();
+      }
+
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        .center-img();
+        .full-width();
+        .zero-padding();
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile{
+          .full-width();
+        }
       }
     }
 
+    @media @mobile {
+      .column();
+    }
   }
 
   .inverse-content {
@@ -49,6 +67,10 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+
+    @media @mobile {
+      .reverse-column();
     }
   }
 
