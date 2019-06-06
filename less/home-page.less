@@ -19,8 +19,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -28,7 +26,6 @@
       @media @mobile {
         .full-width();
       }
-
     }
 
     .img-content {
@@ -78,6 +75,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      .full-width();
+    }
+
     img {
       border-radius: 10px;
     }
@@ -99,7 +100,20 @@
         width: 200px;
         height: 45px;
         padding-top: 15px;
+
+        @media @mobile {
+          .full-width();
+        }
       }
+
+      @media @mobile {
+        .full-width();
+        padding: 0 30px;
+      }
+    }
+
+    @media @mobile {
+      .column();
     }
   }
 }// home
