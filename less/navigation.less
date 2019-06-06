@@ -20,9 +20,22 @@
                     font-size: 1.6rem;
                     text-decoration: none;
                     padding: 0 20px;
-        
+
+                    @media @mobile {
+                        padding: 0 30px;
+                    }
                 }
+            }  
+
+            @media @mobile {
+                margin-top: 15px;
             }
+        }
+
+        @media @mobile {
+            flex-direction: column;
+            margin: 10px 0px 0px;
+            padding-bottom: 5px;
         }
     }
 }

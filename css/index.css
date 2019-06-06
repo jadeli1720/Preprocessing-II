@@ -171,6 +171,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 440px;
+  }
+}
 .nav-container {
   border-bottom: 2px dashed #C0C0C0;
   max-width: 1000px;
@@ -194,6 +199,23 @@ img {
   font-size: 1.6rem;
   text-decoration: none;
   padding: 0 20px;
+}
+@media (max-width: 500px) {
+  .nav-container div .nav-list li a {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container div .nav-list {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container div {
+    flex-direction: column;
+    margin: 10px 0px 0px;
+    padding-bottom: 5px;
+  }
 }
 .footer {
   width: 100%;
