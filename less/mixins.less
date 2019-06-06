@@ -1,1 +1,9 @@
 // Mixins in here
+
+//Function that allows the arguments (@justify, @align) to be modified
+// when using this function class in less styling. 'disply: flex' is a constant.
+.custom-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: center;
+}
