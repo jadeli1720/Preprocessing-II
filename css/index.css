@@ -1,3 +1,6 @@
+.bottom-border {
+  border-bottom: 2px dashed #C0C0C0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,21 +172,28 @@ img {
   margin: 0 auto;
 }
 .nav-container {
+  border-bottom: 2px dashed #C0C0C0;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+}
+.nav-container div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px auto;
+  margin: 10px 100px 0;
+  padding-bottom: 25px;
 }
-.nav-container .nav-list {
+.nav-container div .nav-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.nav-container .nav-list li a {
+.nav-container div .nav-list li a {
   color: #212529;
-  font-size: 1.5rem;
-  padding: 0 20px;
+  font-size: 1.6rem;
   text-decoration: none;
+  padding: 0 20px;
 }
 .footer {
   width: 100%;

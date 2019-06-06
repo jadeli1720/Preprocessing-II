@@ -1,19 +1,27 @@
 // Navigation Styles here
 .nav-container {
-    .custom-layout(space-between, center);
-    margin: 10px auto;
-
-    .nav-list {
-        .custom-layout(flex-end, center);
-
-        li {
-
-            a{
-                color: @shark;
-                font-size: 1.5rem;
-                padding: 0 20px;
-                text-decoration: none;
+    .bottom-border();
+    max-width: 1000px;
+    width:100%;
+    margin: 0px auto;
     
+    div{
+        .custom-layout(space-between, center);
+        margin: 10px 100px 0;
+        padding-bottom: 25px;
+
+        .nav-list {
+            .custom-layout(flex-end, center);
+            li {
+
+    
+                a{
+                    color: @shark;
+                    font-size: 1.6rem;
+                    text-decoration: none;
+                    padding: 0 20px;
+        
+                }
             }
         }
     }
