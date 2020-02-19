@@ -1,1 +1,45 @@
 // Mixins in here
+
+//Function that allows the arguments (@justify, @align) to be modified
+// when using this function class in less styling. 'disply: flex' is a constant.
+.custom-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: center;
+}
+
+.bottom-border{
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.signUp-button (@br,@fs, @ta){
+    background: @eastern-blue;
+    color: @white;
+    border-radius: @br;
+    font-size: @fs;
+    text-align: @ta;
+
+}
+
+// mobile mixins
+
+.column {
+    flex-direction: column;
+}
+
+.reverse-column {
+    flex-direction: column-reverse;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.center-img {
+    display: flex;
+    justify-content: center;
+}
+
+.zero-padding {
+    padding-right: 0%;
+}
